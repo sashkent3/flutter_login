@@ -5,6 +5,5 @@ enum LoginUserType {
   firstName,
   lastName,
   text,
-  intlPhone,
   checkbox
 }

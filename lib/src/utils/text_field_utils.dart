@@ -11,7 +11,6 @@ String getAutofillHints(LoginUserType userType) {
     case LoginUserType.lastName:
       return AutofillHints.familyName;
     case LoginUserType.phone:
-    case LoginUserType.intlPhone:
       return AutofillHints.telephoneNumber;
     case LoginUserType.email:
     default:
@@ -28,7 +27,6 @@ TextInputType getKeyboardType(LoginUserType userType) {
     case LoginUserType.text:
       return TextInputType.text;
     case LoginUserType.phone:
-    case LoginUserType.intlPhone:
       return TextInputType.phone;
     case LoginUserType.email:
     default:
@@ -43,7 +41,6 @@ Icon getPrefixIcon(LoginUserType userType) {
     case LoginUserType.lastName:
       return const Icon(FontAwesomeIcons.circleUser);
     case LoginUserType.phone:
-    case LoginUserType.intlPhone:
       return const Icon(FontAwesomeIcons.squarePhoneFlip);
     case LoginUserType.email:
     default:
@@ -60,7 +57,6 @@ String getLabelText(LoginUserType userType) {
     case LoginUserType.lastName:
       return "Last Name";
     case LoginUserType.phone:
-    case LoginUserType.intlPhone:
       return "Phone";
     case LoginUserType.email:
     default:
